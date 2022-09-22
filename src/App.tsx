@@ -2,12 +2,14 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
+import { DogProps, DogData } from "./types";
+
 import Router from "./Router";
 
-function App() {
+function App({ dogs }: DogProps) {
   return (
     <BrowserRouter>
-      <Router />
+      <Router dogs={dogs} />
     </BrowserRouter>
   );
 }
