@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
-import { DogProps, DogData } from "./types";
+import { DogProps, DogData, ColorData, ColorProps, AllProps } from "./types";
 
 import Router from "./Router";
 
-function App({ dogs }: DogProps) {
+function App({ dogs, colors }: AllProps) {
+  const [colorList, setColorList] = useState(colors);
+  const addColor = (color: ColorData) =>
+    setColorList((list) => [color, ...list]);
+
   return (
     <BrowserRouter>
-      <Router dogs={dogs} />
+      <Router dogs={dogs} colors={colorList} addColor={addColor} />
     </BrowserRouter>
   );
 }
@@ -55,6 +59,20 @@ App.defaultProps = {
         "Tubby does not like walks.",
         "Angelina used to hate Tubby, but claims not to anymore.",
       ],
+    },
+  ],
+  colors: [
+    {
+      name: "red",
+      code: "#ff0000",
+    },
+    {
+      name: "green",
+      code: "#00ff00",
+    },
+    {
+      name: "blue",
+      code: "#0000ff",
     },
   ],
 };

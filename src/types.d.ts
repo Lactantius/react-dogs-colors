@@ -9,4 +9,20 @@ interface DogProps {
   dogs: Array<DogData>;
 }
 
-export type { DogData, DogProps };
+interface ColorData {
+  name: string;
+  code: string;
+}
+
+interface ColorProps {
+  colors: ColorData[];
+  add?: Function;
+}
+
+interface AllProps {
+  dogs: Array<DogData>;
+  colors: Array<ColorData>;
+  addColor?: Function;
+}
+
+export type { DogData, DogProps, ColorData, ColorProps, AllProps };

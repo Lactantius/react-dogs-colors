@@ -1,6 +1,8 @@
 import React from "react";
 
-function Color() {
+import { ColorProps } from "./types";
+
+function Color({ colors }: ColorProps) {
   return <div className="Color">A color</div>;
 }
 

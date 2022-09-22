@@ -1,7 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function ColorList(): JSX.Element {
-  return <div className="ColorList">All colors</div>;
+import { ColorProps } from "./types";
+
+function ColorList({ colors }: ColorProps): JSX.Element {
+  return (
+    <div className="ColorList">
+      <h2>All Colors</h2>
+      <ul>
+        {colors.map((color) => (
+          <li key={color.code}>
+            <Link to={color.name}>{color.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default ColorList;
