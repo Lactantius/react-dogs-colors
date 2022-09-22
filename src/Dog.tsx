@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { DogData, DogProps } from "./types";
 
@@ -33,6 +33,7 @@ function Dog({ dogs }: DogProps): JSX.Element {
           <li key={idx}>{fact}</li>
         ))}
       </ul>
+      <Link to="/dogs">Back to list</Link>
     </div>
   );
 }
