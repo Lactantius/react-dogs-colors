@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+import "./ColorNew.css";
+
 import { NewColorProps } from "./types";
 
 function ColorNew({ colors, add }: NewColorProps): JSX.Element {
@@ -30,9 +32,9 @@ function ColorNew({ colors, add }: NewColorProps): JSX.Element {
     <div className="ColorNew">
       <h2>Add a new color</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name" />
+        <label htmlFor="name">Name:</label>
         <input id="name" name="name" type="text" onChange={handleChange} />
-        <label htmlFor="code" />
+        <label htmlFor="code">Color Code:</label>
         <input id="code" name="code" type="color" onChange={handleChange} />
         <button>Add Color</button>
       </form>

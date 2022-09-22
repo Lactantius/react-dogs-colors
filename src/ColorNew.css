@@ -1,0 +1,35 @@
+.ColorNew {
+  text-align: center;
+}
+.ColorNew form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.ColorNew input {
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.ColorNew input[type="color"] {
+  padding: 0;
+  width: 6rem;
+}
+
+.ColorNew button {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: #1466ff;
+  border: none;
+  border-radius: 5px;
+}
+
+.ColorNew a {
+  font-size: 1.5rem;
+}
