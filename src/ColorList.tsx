@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./ColorList.css";
+
 import { ColorProps } from "./types";
 
 function ColorList({ colors }: ColorProps): JSX.Element {
@@ -10,7 +12,7 @@ function ColorList({ colors }: ColorProps): JSX.Element {
       <ul>
         {colors.map((color) => (
           <li key={color.code}>
-            <Link to={color.name}>{color.name}</Link>
+            <Link to={color.name}>{color.name.toUpperCase()}</Link>
           </li>
         ))}
       </ul>
