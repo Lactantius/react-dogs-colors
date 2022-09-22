@@ -16,7 +16,11 @@ interface ColorData {
 
 interface ColorProps {
   colors: ColorData[];
-  add?: Function;
+}
+
+interface NewColorProps {
+  colors: ColorData[];
+  add: Function;
 }
 
 interface AllProps {
@@ -25,4 +29,11 @@ interface AllProps {
   addColor?: Function;
 }
 
-export type { DogData, DogProps, ColorData, ColorProps, AllProps };
+export type {
+  DogData,
+  DogProps,
+  ColorData,
+  ColorProps,
+  NewColorProps,
+  AllProps,
+};
