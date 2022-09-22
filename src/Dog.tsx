@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 
-import { DogData, DogProps } from "./types";
+import "./Dog.css";
+
+import { DogProps } from "./types";
 
 function getImage(src: string) {
   try {

@@ -1,0 +1,27 @@
+.Dog {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Dog h2 {
+  grid-column: 1 / 4;
+}
+
+.Dog img {
+  width: 100%;
+}
+
+.Dog ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.Dog a {
+  text-align: left;
+}
