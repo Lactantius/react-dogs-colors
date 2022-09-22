@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./DogList.css";
+
 import { DogProps } from "./types";
 
 function DogList({ dogs }: DogProps): JSX.Element {
