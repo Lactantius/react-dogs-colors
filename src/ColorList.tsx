@@ -14,6 +14,7 @@ function ColorList({ colors }: ColorProps): JSX.Element {
           </li>
         ))}
       </ul>
+      <Link to="/colors/new">Add a new color</Link>
     </div>
   );
 }

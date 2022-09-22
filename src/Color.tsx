@@ -10,7 +10,9 @@ function Color({ colors }: ColorProps) {
   const divColor = { backgroundColor: color.code };
   return (
     <div className="Color" style={divColor}>
-      This color is called {color.name}.
+      Here is some {color.name} for you.
+      <Link to="/colors">All Colors</Link>
+      <Link to="/colors/new">Add a new color</Link>
     </div>
   );
 }
