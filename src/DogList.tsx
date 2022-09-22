@@ -1,11 +1,19 @@
 import React from "react";
-import * as whiskey from "./whiskey.jpg";
+import { Link } from "react-router-dom";
 
-function DogList(): JSX.Element {
+import { DogProps } from "./types";
+
+function DogList({ dogs }: DogProps): JSX.Element {
   return (
     <div className="DogList">
-      All dogs
-      <img src={whiskey.default} alt="" />
+      <h2>All dogs</h2>
+      <ul>
+        {dogs.map((dog) => (
+          <li key={dog.name}>
+            <Link to={dog.name}>{dog.name}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

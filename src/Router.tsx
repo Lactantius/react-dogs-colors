@@ -12,7 +12,7 @@ function Router({ dogs }: DogProps) {
   return (
     <Routes>
       <Route path="dogs/:name" element={<Dog dogs={dogs} />} />
-      <Route path="dogs" element={<DogList />} />
+      <Route path="dogs" element={<DogList dogs={dogs} />} />
       <Route path="colors/:color" element={<Color />} />
       <Route path="colors" element={<ColorList />} />
     </Routes>
