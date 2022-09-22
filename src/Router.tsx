@@ -18,7 +18,7 @@ function Router({ dogs, colors, addColor }: AllProps) {
         path="colors/new"
         element={<ColorNew colors={colors} add={addColor as Function} />}
       />
-      <Route path="colors/:color" element={<Color colors={colors} />} />
+      <Route path="colors/:name" element={<Color colors={colors} />} />
       <Route path="colors" element={<ColorList colors={colors} />} />
     </Routes>
   );
