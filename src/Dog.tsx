@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import { DogData, DogProps } from "./types";
-import whiskey from "./whiskey.jpg";
 
 function getImage(src: string) {
   try {
@@ -18,9 +17,9 @@ function Dog({ dogs }: DogProps): JSX.Element {
     (d) => d.name.toLowerCase() === name?.toLowerCase()
   )[0];
 
-  const image = getImage("bob");
+  const image = getImage(dog.src);
 
-  if (!dog) return <h2>We don't find a dog named {name}.</h2>;
+  if (!dog) return <h2>We didn't find a dog named {name}.</h2>;
 
   return (
     <div className="Dog">
@@ -30,8 +29,8 @@ function Dog({ dogs }: DogProps): JSX.Element {
         {dog.name} is {dog.age} years old and a genuine dog.
       </p>
       <ul className="Dog-facts">
-        {dog.facts.map((fact) => (
-          <li>{fact}</li>
+        {dog.facts.map((fact, idx) => (
+          <li key={idx}>{fact}</li>
         ))}
       </ul>
     </div>
