@@ -1,0 +1,13 @@
+.Color {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.Color div {
+  height: 30rem;
+  width: 30rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}

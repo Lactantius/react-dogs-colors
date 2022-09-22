@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 
+import "./Color.css";
+
 import { ColorProps } from "./types";
 
 function Color({ colors }: ColorProps) {
@@ -9,10 +11,11 @@ function Color({ colors }: ColorProps) {
 
   if (!color) return <Navigate to="/colors" />;
 
-  const divColor = { backgroundColor: color.code };
+  const selectedColor = { backgroundColor: color.code };
   return (
-    <div className="Color" style={divColor}>
-      Here is some {color.name} for you.
+    <div className="Color">
+      <h2 style={{ color: color.code }}>{color.name.toUpperCase()}</h2>
+      <div style={selectedColor}>Here is some {color.name} for you.</div>
       <Link to="/colors">All Colors</Link>
       <Link to="/colors/new">Add a new color</Link>
     </div>
