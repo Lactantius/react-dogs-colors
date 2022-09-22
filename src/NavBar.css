@@ -1,0 +1,26 @@
+.NavBar {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 1rem;
+}
+
+.NavBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.NavBar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin: auto;
+  margin-right: 0;
+}

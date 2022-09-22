@@ -8,6 +8,7 @@ import DogList from "./DogList";
 import ColorNew from "./ColorNew";
 import Color from "./Color";
 import ColorList from "./ColorList";
+import Home from "./Home";
 
 function Router({ dogs, colors, addColor }: AllProps) {
   return (
@@ -20,6 +21,7 @@ function Router({ dogs, colors, addColor }: AllProps) {
       />
       <Route path="colors/:name" element={<Color colors={colors} />} />
       <Route path="colors" element={<ColorList colors={colors} />} />
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 }

@@ -5,6 +5,7 @@ import "./App.css";
 import { ColorData, AllProps } from "./types";
 
 import Router from "./Router";
+import NavBar from "./NavBar";
 
 function App({ dogs, colors }: AllProps) {
   const [colorList, setColorList] = useState(colors);
@@ -12,9 +13,12 @@ function App({ dogs, colors }: AllProps) {
     setColorList((list) => [color, ...list]);
 
   return (
-    <BrowserRouter>
-      <Router dogs={dogs} colors={colorList} addColor={addColor} />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Router dogs={dogs} colors={colorList} addColor={addColor} />
+      </BrowserRouter>
+    </>
   );
 }
 
