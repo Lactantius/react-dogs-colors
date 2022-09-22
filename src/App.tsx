@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
-import { DogProps, DogData, ColorData, ColorProps, AllProps } from "./types";
+import { ColorData, AllProps } from "./types";
 
 import Router from "./Router";
 

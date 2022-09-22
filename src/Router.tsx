@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { DogData, DogProps, AllProps } from "./types";
+import { AllProps } from "./types";
 
 import Dog from "./Dog";
 import DogList from "./DogList";
