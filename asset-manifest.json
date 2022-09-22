@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-dogs-colors/static/css/main.14a97d7f.css",
+    "main.js": "/react-dogs-colors/static/js/main.acbe72ad.js",
+    "static/js/787.ee101be4.chunk.js": "/react-dogs-colors/static/js/787.ee101be4.chunk.js",
+    "static/media/whiskey.jpg": "/react-dogs-colors/static/media/whiskey.7650f3f2b68e4bebacaa.jpg",
+    "static/media/tubby.jpg": "/react-dogs-colors/static/media/tubby.9c06bf82b050f49b0a43.jpg",
+    "static/media/duke.jpg": "/react-dogs-colors/static/media/duke.a2a605e8b55545c21c28.jpg",
+    "static/media/perry.jpg": "/react-dogs-colors/static/media/perry.26aa759591c047a1c58c.jpg",
+    "static/media/logo.svg": "/react-dogs-colors/static/media/logo.6ce24c58023cc2f8fd88.svg",
+    "index.html": "/react-dogs-colors/index.html",
+    "main.14a97d7f.css.map": "/react-dogs-colors/static/css/main.14a97d7f.css.map",
+    "main.acbe72ad.js.map": "/react-dogs-colors/static/js/main.acbe72ad.js.map",
+    "787.ee101be4.chunk.js.map": "/react-dogs-colors/static/js/787.ee101be4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14a97d7f.css",
+    "static/js/main.acbe72ad.js"
+  ]
+}
